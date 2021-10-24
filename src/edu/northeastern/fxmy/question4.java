@@ -14,15 +14,15 @@ public class question4 {
 
 
     //Time: O(n) Space: O(n)
-    public static void question4(Tree a){
-        if(a.root == null){
+    public static void question4(TreeNode a){
+        if(a == null){
             return;
         }
         int count = 0;
         int deep = 1;
 //        Queue< TreeNode >  queue1 = new LinkedList<Object>();
         Queue<TreeNode> queue = new java.util.LinkedList<>();
-        queue.add(a.root);
+        queue.add(a);
         queue.add(null);
 
         while( queue.isEmpty() == false ){
