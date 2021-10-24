@@ -67,15 +67,11 @@ public class question3 {
                     back = back.next;
                 }
             }else{
-                res = back;
-                res.next = null;
-                return res;
+                return back;
             }
         }
 
-        res = back;
-        res.next = null;
-        return res;
+        return back;
 
     }
 
